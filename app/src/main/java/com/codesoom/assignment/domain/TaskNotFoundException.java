@@ -4,6 +4,11 @@ public class TaskNotFoundException extends RuntimeException {
     private final String defaultMessage = "Not found task id";
     private final String message;
 
+    public TaskNotFoundException(String message, long id) {
+        super();
+        this.message = String.format("%s: %d", message, id);
+    }
+
     public TaskNotFoundException(long id) {
         super();
         this.message = String.format("%s: %d", defaultMessage, id);
