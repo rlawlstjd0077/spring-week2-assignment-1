@@ -1,6 +1,6 @@
 package com.codesoom.assignment.application;
 
 public interface IdGenerable {
-    long generateNewTaskId();
+    long generateNewId();
     void resetId();
 }
